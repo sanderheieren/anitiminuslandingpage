@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  box-sizing: border-box;
+}
 .logo-name {
   font-weight: 200;
 }
@@ -10,8 +19,15 @@
   position: fixed;
   top: 0;
   width: 100vw;
+  display: flex;
+}
+#nav-bar ul {
+  display: flex;
+}
+.nav-link {
+  color: white;
 }
 
 #page {
-  margin-top: 100px;
+  margin-top: 150px;
 }
