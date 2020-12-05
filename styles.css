@@ -94,17 +94,18 @@ input[type="email"] {
   margin: 10px;
   border-radius: 50px;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
   position: relative;
   height: 80vh;
   flex: 0.5;
-  /* object-fit: cover; */
+  transition: flex 0.7s ease-in;
 }
 .panel.active {
   flex: 4;
 }
+
 .panel h3 {
   font-size: 20px;
   position: absolute;
@@ -112,11 +113,38 @@ input[type="email"] {
   left: 20px;
   margin: 0;
   color: white;
+  opacity: 0;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
 }
 
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
     width: 100vw;
+    height: 100vh;
   }
+}
+#features {
+  margin-top: 100px;
+  text-align: center;
+}
+#customize {
+  display: flex;
+  flex-direction: column;
+}
+#customize article {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  background-color: rgb(122, 50, 77);
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
